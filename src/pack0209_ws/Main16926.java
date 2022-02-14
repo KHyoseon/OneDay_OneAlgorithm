@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
+// 백준 1874. 배열 돌리기 1
+
 public class Main16926 {
 
 	static int map[][];
