@@ -1,5 +1,3 @@
-package pack0211;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -9,7 +7,7 @@ import java.util.Stack;
 
 // SWEA 1223. [S/W 문제해결 기본] 6일차 - 계산기2
 
-public class Solution1223 {
+public class Solution_SWEA_1223_계산기2 {
 	/*
 	[입력]
 	9

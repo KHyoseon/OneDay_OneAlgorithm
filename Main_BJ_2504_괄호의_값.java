@@ -1,5 +1,3 @@
-package pack0208;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -12,7 +10,7 @@ import java.util.Stack;
 
 // 백준 2504. 괄호의 값
 
-public class Main2504 {
+public class Main_BJ_2504_괄호의_값 {
 
 	/* stack : 괄호와 *로 이루어진 문자열을 저장하는데 사용
 	 * nums : 숫자를 저장하는데 사용

@@ -1,5 +1,3 @@
-package pack0209_ws;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -9,7 +7,7 @@ import java.util.StringTokenizer;
 
 // 백준 1874. 배열 돌리기 1
 
-public class Main16926 {
+public class Main_BJ_16926_배열_돌리기_1 {
 
 	static int map[][];
 	static int N, M, R;

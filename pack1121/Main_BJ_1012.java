@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main1012 {
+public class Main_BJ_1012 {
     static int N, M, K; // R, C
     static int[][] map;
     static boolean[][] visited;

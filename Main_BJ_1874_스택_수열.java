@@ -1,5 +1,3 @@
-package pack0207;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -8,7 +6,7 @@ import java.util.Stack;
 
 // 백준 1874.
 
-public class Main1874 {
+public class Main_BJ_1874_스택_수열 {
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
