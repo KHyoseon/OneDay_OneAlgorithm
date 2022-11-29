@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
-public class Sol132265 {
+public class Solution_PG_132265 {
     public static void main(String[] args) {
         int[] topping = {1,2,1,3,1,4,1,2};
 //        int[] topping = {1,2,3,1,4};

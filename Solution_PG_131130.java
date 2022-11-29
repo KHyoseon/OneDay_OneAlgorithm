@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Sol131130 {
+public class Solution_PG_131130 {
     public static void main(String[] args) {
         int[] cards = {8,6,3,7,2,5,1,4};
         System.out.println((new Solution()).solution(cards));

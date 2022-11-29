@@ -1,7 +1,7 @@
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class Sol42626 {
+public class Solution_PG_42626 {
     public static void main(String[] args) {
         int K = 7;
         int[] scoville = {1, 2, 3, 9, 10, 12};
