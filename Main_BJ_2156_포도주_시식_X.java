@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main2156x {
+public class Main_BJ_2156_포도주_시식_X {
     static int[][] memo;
     static int N;
     public static void main(String[] args) throws IOException {
@@ -27,7 +27,7 @@ public class Main2156x {
 
         for(int i=2; i<N+1; i++){
             memo[i][0] = Math.max(memo[i-1][0]+glasses[i], memo[i][1]);
-            memo[i][1] = Math.max(memo[i-1][0], memo[i-1][1]);
+            memo[i][1] = Math.max(memo[i - 1][0], memo[i - 1][1]);
         }
 
         return Math.max(memo[N][0], memo[N][1]);

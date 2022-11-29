@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Arrays;
 
-public class Main17070 {
+public class Main_BJ_17070_파이프_옮기기_1_X {
 
     static int N;
     static int[][] memo, direct;

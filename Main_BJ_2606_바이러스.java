@@ -1,11 +1,9 @@
-import com.sun.org.apache.bcel.internal.generic.SWAP;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Main2606 {
+public class Main_BJ_2606_바이러스 {
     static int[] parent;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
