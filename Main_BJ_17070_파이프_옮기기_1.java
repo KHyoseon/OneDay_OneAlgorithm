@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 public class Main_BJ_17070_파이프_옮기기_1 {
 
-    static int N, cnt;
+    static int N;
     static int[][][] memo;
     static boolean[][] map;
 
@@ -31,7 +31,6 @@ public class Main_BJ_17070_파이프_옮기기_1 {
 
         map[0][0] = map[0][1] = true;
 
-        cnt = 0;
         dfs(0, 0, 1);
 
         System.out.print(memo[0][0][1]);
