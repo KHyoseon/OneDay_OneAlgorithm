@@ -56,6 +56,24 @@ class Solution {
             nPr(n, r-1, i+1, total-1, set+(1<<ids.get(i)));
         }
     }
+    
+    /*
+    Set<Integer> set = new HashSet<>();
+    public void go(int index, String[] user_id, String[] banned_id, int bit) {
+
+        if(index == banned_id.length) {
+            set.add(bit);
+            return;
+        }
+
+        String reg = banned_id[index].replace("*", "[\\w\\d]");
+        for(int i=0; i<user_id.length; ++i) {
+            if((((bit>>i) & 1) == 1) || !user_id[i].matches(reg)) continue;
+            go(index + 1, user_id, banned_id, (bit | 1<<i));
+        }
+
+    }
+    */
 
     class Match {
         String n;
