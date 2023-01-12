@@ -10,12 +10,18 @@ class Solution {
         for(int r=0; r<n; r++)
             Arrays.fill(matrix[r], INF);
 
-        for(int[] node: fares){
-            matrix[node[0]-1][node[1]-1] = node[2];
-            matrix[node[1]-1][node[0]-1] = node[2];
-        }
+        for(int[] node: fares)
+            matrix[node[0]-1][node[1]-1] = matrix[node[1]-1][node[0]-1] = node[2];
 
-        int[] distS = dijkstra(Arrays.copyOf(matrix[s - 1], n), n, s-1);
+        floyd(n);
+
+        int min = Integer.MAX_VALUE;
+        for(int k=0; k<n; k++)
+            min = Math.min(min, matrix[k][s-1] + matrix[k][a - 1] + matrix[k][b - 1]);
+
+        return min;
+
+        /*int[] distS = dijkstra(Arrays.copyOf(matrix[s - 1], n), n, s-1);
         int[] distA = dijkstra(Arrays.copyOf(matrix[a - 1], n), n, a-1);
         int[] distB = dijkstra(Arrays.copyOf(matrix[b - 1], n), n, b-1);
 
@@ -26,7 +32,24 @@ class Solution {
             pq.add(distS[i] + distA[i] + distB[i]);
         }
 
-        return pq.peek();
+        return pq.peek();*/
+    }
+
+    private void floyd(int n){
+        for(int k=0; k<n; k++){
+            for(int s=0; s<n; s++){
+                if(k==s) continue;
+                for(int f=0; f<n; f++){
+                    if(k==f || s==f) continue;
+                    if(matrix[s][f] > matrix[s][k] + matrix[k][f]){
+                        matrix[s][f] = matrix[s][k] + matrix[k][f];
+                    }
+                }
+            }
+        }
+
+        for(int i=0; i<n; i++)
+            matrix[i][i] = 0;
     }
 
     private int[] dijkstra(int[] dist, int n, int s){
