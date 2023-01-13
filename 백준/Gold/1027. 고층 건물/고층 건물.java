@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
@@ -43,10 +44,8 @@ public class Main {
             }
         }
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
-        for(int canSee: cnt)
-            pq.add(canSee);
+        Arrays.sort(cnt);
 
-        System.out.println(pq.peek());
+        System.out.println(cnt[N-1]);
     }
 }
