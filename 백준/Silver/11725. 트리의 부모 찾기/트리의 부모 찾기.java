@@ -9,9 +9,9 @@ public class Main {
 
         int N = Integer.parseInt(br.readLine());
 
-        ArrayList<ArrayList<Integer>> list = new ArrayList<>(N + 1);
-        for (int i = 0; i < N+1; i++) {
-            list.add(new ArrayList<>());
+        ArrayList<Integer>[] list = new ArrayList[N + 1];
+        for (int i = 1; i < N+1; i++) {
+            list[i] = new ArrayList<>();
         }
 
         String[] input;
@@ -20,8 +20,8 @@ public class Main {
             input = br.readLine().split(" ");
             nodes[0] = Integer.parseInt(input[0]);
             nodes[1] = Integer.parseInt(input[1]);
-            list.get(nodes[0]).add(nodes[1]);
-            list.get(nodes[1]).add(nodes[0]);
+            list[nodes[0]].add(nodes[1]);
+            list[nodes[1]].add(nodes[0]);
         }
 
         Queue<Integer> queue = new LinkedList<>();
@@ -30,7 +30,7 @@ public class Main {
         int[] parent = new int[N+1];
         while (!queue.isEmpty()) {
             int p = queue.poll();
-            for(int c: list.get(p)) {
+            for(int c: list[p]) {
                 if(parent[c] != 0) continue;
                 parent[c] = p;
                 queue.add(c);
