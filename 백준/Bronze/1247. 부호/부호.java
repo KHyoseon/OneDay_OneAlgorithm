@@ -16,10 +16,9 @@ public class Main {
                 sum = sum.add(new BigInteger(br.readLine()));
             }
 
-            BigInteger zero = new BigInteger("0");
-            if(sum.compareTo(zero)==0)
+            if(sum.signum() == 0)
                 sb.append("0\n");
-            else if(sum.compareTo(zero)<0)
+            else if(sum.signum() == -1)
                 sb.append("-\n");
             else
                 sb.append("+\n");
