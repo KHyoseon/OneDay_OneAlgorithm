@@ -16,7 +16,8 @@ class Solution {
         }
         return answer;
     }
-}```
+}
+```
 
 
 여기서 새로 배운 부분은 **hm.put(player, hm.getOrDefault(player, 0) + 1)** 부분이었다.
@@ -31,6 +32,7 @@ if(!map.containsKey(pt)){
     map.put(pt, 1);
     continue;
 }
-map.put(pt, map.get(pt) + 1);```
+map.put(pt, map.get(pt) + 1);
+```
             
 처럼 풀었는데 이미 Collections 라이브러리에 동일한 함수가 내장되어 있었다.
