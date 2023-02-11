@@ -1,4 +1,7 @@
 ## 이분탐색
+
+중간 값을 보고 range를 조절
+
 ```java
 while(l+1 < r) {
     mid = (l+r)/2;
@@ -11,6 +14,12 @@ while(l+1 < r) {
 ```
 
 조건 (canGo)
+
+X+1 번째 사람이 건널 때 jump를 k번 이상해야 하는지 확인
+
+-> 밟을 수 있는 횟수가 X와 같거나 그보다 작으면 점프해야함
+-> 점프하지 않고 밟을 수 있다면 jump를 초기화함
+
 ```java
 private boolean canGo(int people, int[] stones, int k) {
     int jump = 0;
@@ -33,25 +42,25 @@ private boolean canGo(int people, int[] stones, int k) {
 
 ```java
 public int solution(int[] stones, int k) {
-  Queue<Integer> window = new LinkedList<>();
+    Queue<Integer> window = new LinkedList<>();
 
-  int max = 0;
-  for(int i=0; i<k; i++) {
-      max = Math.max(max, stones[i]);
-      window.add(stones[i]);
-  }
+    int max = 0;
+    for(int i=0; i<k; i++) {
+        max = Math.max(max, stones[i]);
+        window.add(stones[i]);
+    }
 
-  int poll, min = max;
-  for(int i=k, l=stones.length; i<l && !window.isEmpty(); i++) {
-      poll = window.poll();
-      window.add(stones[i]);
-      if(poll == max){
-          max = maximum(window);
-      }
-      min = Math.min(min, max);
-  }
+    int poll, min = max;
+    for(int i=k, l=stones.length; i<l && !window.isEmpty(); i++) {
+        poll = window.poll();
+        window.add(stones[i]);
+        if(poll == max){
+            max = maximum(window);
+        }
+        min = Math.min(min, max);
+    }
 
-  return min;
+    return min;
 }
 ```
 
