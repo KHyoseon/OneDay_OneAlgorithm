@@ -8,6 +8,7 @@ public class Main {
     static int N, M, K;
     static int[] coor, order, dice;
     static int[][] map;
+    static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -41,6 +42,8 @@ public class Main {
         for(int direction: order) {
             roll(direction-1, coor);
         }
+
+        System.out.println(sb);
     }
 
     // 동 서 북 남
@@ -66,7 +69,7 @@ public class Main {
         coor[0] += dx[direction];
         coor[1] += dy[direction];
 
-        System.out.println(dice[1]);
+        sb.append(dice[1]).append("\n");
         return coor;
     }
 
