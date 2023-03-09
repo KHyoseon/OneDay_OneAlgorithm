@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 81.2 MB, 시간: 0.03 ms
+메모리: 84.6 MB, 시간: 0.04 ms
 
 ### 구분
 
@@ -54,7 +54,5 @@
 </tr>
 </tbody>
       </table>
-<p><a href="http://hsin.hr/coci/archive/2011_2012/contest4_tasks.pdf" target="_blank" rel="noopener">출처</a></p>
-
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
