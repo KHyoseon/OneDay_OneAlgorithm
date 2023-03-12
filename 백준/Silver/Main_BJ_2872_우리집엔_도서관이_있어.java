@@ -12,7 +12,6 @@ public class Main_BJ_2872_우리집엔_도서관이_있어 {
             bucket[i] = Integer.parseInt(br.readLine());
         }
 
-        int peek;
         int max=N, cnt=0;
         for(int i=N-1; i>=0; i--) {
             if(bucket[i] == max){
