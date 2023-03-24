@@ -59,4 +59,49 @@ public class Main_BJ_16398_행성_연결 {
             prim(next[0]);
         }
     }
+    
+    private void prim() {
+        Stack<Integer> tree = new Stack<>();
+        tree.add(0);
+
+        int cur=0, node=0, next=0;
+        int minWeight = Integer.MAX_VALUE, min = Integer.MAX_VALUE;
+
+        // 새로 추가할 노드: node => cur과 가장 가까운 노드
+        for(int j=0; j<N; j++) {
+            if(j == 0) continue;
+            if(weight[0][j] < minWeight) {
+                minWeight = weight[0][j];
+                node = j;
+            }
+        }
+
+        int sum = 0;
+         do {
+            cur = tree.peek();
+            minWeight = Integer.MAX_VALUE;
+
+            // 새로 추가할 노드: node => cur과 가장 가까운 노드
+            for(int j=0; j<N; j++) {
+                if(j == cur) continue;
+                if(weight[cur][j] < minWeight) {
+                    minWeight = weight[cur][j];
+                    node = j;
+                }
+            }
+
+            // node와 가장 가까이 있는 tree 구성 노드 찾기
+            minWeight = Integer.MAX_VALUE;
+            for(int j=0; j<N; j++) {
+                if(node==j && !tree.contains(j)) continue;
+                if(weight[node][j] < minWeight) {
+                    minWeight = weight[node][j];
+                    next = j;
+                }
+            }
+
+            sum += minWeight;
+            tree.add(node);
+        } while(tree.size() < N);
+    }
 }
