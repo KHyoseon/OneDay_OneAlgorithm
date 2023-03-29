@@ -42,3 +42,36 @@ static class Edge implements Comparable<Edge> {
     }
 }
 ```
+
+### Prim
+```java
+private static long Prim(){
+    int i, near=0, min;
+    int[] nearest = new int[N];
+    int[] distance = new int[N];
+    long answer = 0;
+
+    for(i=1; i<N; i++) {
+        nearest[i] = 0;
+        distance[i] = weight[0][i];
+    }
+    for(int j=0; j<N-1; j++) {
+        min = Integer.MAX_VALUE;
+        for(i=1; i<N; i++) {
+            if(0<=distance[i] && distance[i]<min) {
+                min = distance[i];
+                near = i;
+            }
+        }
+        answer += min;
+        distance[near] = -1;
+        for(i=1; i<N; i++) {
+            if(weight[i][near] < distance[i]) {
+                distance[i] = weight[i][near];
+                nearest[i] = near;
+            }
+        }
+    }
+    return answer;
+}
+```
