@@ -13,15 +13,15 @@ class Solution {
         for(int[] node: fares)
             matrix[node[0]-1][node[1]-1] = matrix[node[1]-1][node[0]-1] = node[2];
 
-        floyd(n);
+        /*floyd(n);
 
         int min = Integer.MAX_VALUE;
         for(int k=0; k<n; k++)
             min = Math.min(min, matrix[k][s-1] + matrix[k][a - 1] + matrix[k][b - 1]);
 
-        return min;
+        return min;*/
 
-        /*int[] distS = dijkstra(Arrays.copyOf(matrix[s - 1], n), n, s-1);
+        int[] distS = dijkstra(Arrays.copyOf(matrix[s - 1], n), n, s-1);
         int[] distA = dijkstra(Arrays.copyOf(matrix[a - 1], n), n, a-1);
         int[] distB = dijkstra(Arrays.copyOf(matrix[b - 1], n), n, b-1);
 
@@ -32,7 +32,7 @@ class Solution {
             pq.add(distS[i] + distA[i] + distB[i]);
         }
 
-        return pq.peek();*/
+        return pq.peek();
     }
 
     private void floyd(int n){
