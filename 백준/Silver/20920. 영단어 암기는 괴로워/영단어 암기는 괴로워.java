@@ -18,15 +18,12 @@ public class Main {
             word.put(key, word.getOrDefault(key, 0) + 1);
         }
 
-        ArrayList<String> keys = new ArrayList<>();
-        keys.addAll(word.keySet());
-
-        // M 이상 단어를 자주 나올 수록, 길이가 길 수록, 사전 순으로 정렬.
-        Collections.sort(keys, ((o1, o2) -> word.get(o1)==word.get(o2)? (o1.length()==o2.length()? o1.compareTo(o2): o2.length()-o1.length()): word.get(o2)-word.get(o1)));
+        PriorityQueue<String> queue = new PriorityQueue<>(((o1, o2) -> word.get(o1)==word.get(o2)? (o1.length()==o2.length()? o1.compareTo(o2): o2.length()-o1.length()): word.get(o2)-word.get(o1)));
+        queue.addAll(word.keySet());
 
         StringBuilder sb = new StringBuilder();
-        for(String key: keys) {
-            sb.append(key).append("\n");
+        while(!queue.isEmpty()) {
+            sb.append(queue.poll()).append("\n");
         }
 
         System.out.print(sb);
