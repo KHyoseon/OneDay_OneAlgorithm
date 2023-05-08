@@ -1,10 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 class Solution {
     public int solution(int[] a) {
-        ArrayList<int[]> list = new ArrayList<>();
-        
         int l = a.length;
 
         int[] left = new int[l];
