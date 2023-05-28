@@ -34,7 +34,7 @@ public class Main {
             return;
         }
 
-        if (cur == 3){
+        if (cur==3){
             comb(4, flag);
         }
         else {
@@ -47,10 +47,11 @@ public class Main {
     }
 
     static int inning, score, out;
-    static int first, second, third;
+    static int[] base = new int[3];
+
     private static int simulate() {
         inning = score = out = 0;
-        first = second = third = 0;
+        base[0] = base[1] = base[2] = 0;
 
         boolean outted = false;
         int o = 0;
@@ -60,7 +61,7 @@ public class Main {
             }
             inning++;
             out = 0;
-            first = second = third = 0;
+            base[0] = base[1] = base[2] = 0;
             outted = false;
         }
 
@@ -74,49 +75,34 @@ public class Main {
                 if(out >= 3)    return true;
                 break;
             case 1:
-                anta();
+                score += base[2];
+                base[2] = base[1];
+                base[1] = base[0];
+                base[0] = 1;
                 break;
             case 2:
-                tworuta();
+                score += base[2];
+                score += base[1];
+                base[2] = base[0];
+                base[1] = 1;
+                base[0] = 0;
                 break;
             case 3:
-                threeruta();
+                score += base[2];
+                score += base[1];
+                score += base[0];
+                base[1] = base[0] = 0;
+                base[2] = 1;
                 break;
             case 4:
-                homerun();
+                score += base[2];
+                score += base[1];
+                score += base[0];
+                score++;
+                base[2] = base[1] = base[0] = 0;
                 break;
         }
         return false;
     }
 
-    private static void homerun() {
-        score += third;
-        score += second;
-        score += first;
-        score++;
-        third = second = first = 0;
-    }
-
-    private static void threeruta() {
-        score += third;
-        score += second;
-        score += first;
-        second = first = 0;
-        third = 1;
-    }
-
-    private static void tworuta() {
-        score += third;
-        score += second;
-        third = first;
-        second = 1;
-        first = 0;
-    }
-
-    private static void anta() {
-        score += third;
-        third = second;
-        second = first;
-        first = 1;
-    }
 }
