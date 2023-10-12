@@ -54,6 +54,15 @@ public class Solution_SWEA_암호문1 {
                         }
 
                         break;
+
+                    case "A":
+                        cnt = Integer.parseInt(st.nextToken());
+
+                        for(int i=0; i<cnt; i++) {
+                            list.add(st.nextToken());
+                        }
+
+                        break;
                 }
             }
 
