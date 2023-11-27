@@ -7,16 +7,15 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int[] nums = new int[9];
-        char[] room = br.readLine().toCharArray();
+        int room = Integer.parseInt(br.readLine());
 
-        for(char card: room) {
-            int index = card-'0';
-            if(index == 9) index = 6;
-            nums[index]++;
+        while(room > 0) {
+            int num = room%10;
+            if(num == 9) num = 6;
+            nums[num]++;
+            room /= 10;
         }
-        int div = nums[6]%2;
-        nums[6] /= 2;
-        nums[6] += div;
+        nums[6] = nums[6]/2 + nums[6]%2;
 
         int max = -1;
         for(int i=0; i<9; i++) {
