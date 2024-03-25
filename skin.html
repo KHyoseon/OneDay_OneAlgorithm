@@ -110,7 +110,59 @@
                     </div>
                   </section>
                 </s_cover>
-                
+                <s_cover name="zigzag">
+                  <section class="flex flex-col items-center px-4 lg:px-0 lg:w-idx lg:mx-auto" data-mode="zigzag">
+                    <h1 class="text-3xl font-bold text-h-600 dark:text-h-200 my-10 empty:my-10 lg:my-20">[##_cover_title_##]</h1>
+                    <div class="list">
+                      <s_cover_item>
+                        <div class="post">
+                          <s_cover_item_thumbnail>
+                            <div class="thumbnail" href="[##_cover_item_url_##]"><img class="lazyload object-cover bg-h-100" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt=""></div>
+                          </s_cover_item_thumbnail>
+                          <s_cover_item_article_info>
+                            <div class="description flex flex-col"><a class="category text-sm text-h-400" href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a>
+                              <h2><a class="text-h-800 dark:text-h-200" href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2><time class="text-h-400 text-sm">[##_cover_item_simple_date_##]</time>
+                              <p class="relative overflow-hidden leading-7 text-h-500 dark:text-h-400">[##_cover_item_summary_##]</p>
+                            </div>
+                          </s_cover_item_article_info>
+                          <s_cover_item_not_article_info>
+                            <div class="description flex flex-col">
+                              <h2><a class="text-h-800 dark:text-h-200" href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                              <p>[##_cover_item_summary_##]</p>
+                            </div>
+                          </s_cover_item_not_article_info>
+                        </div>
+                      </s_cover_item>
+                    </div>
+                  </section>
+                </s_cover>
+                <s_cover name="slideshow">
+                  <section class="flex flex-col items-center gap-y-10" data-mode="slideshow">
+                    <div class="swiper w-full h-screen">
+                      <div class="list swiper-wrapper">
+                        <s_cover_item>
+                          <div class="post swiper-slide flex justify-center items-center before:absolute before:right-0 before:top-0 before:w-full before:h-screen before:bg-h-900/60 before:z-10">
+                            <s_cover_item_thumbnail>
+                              <div class="thumbnail" href="[##_cover_item_url_##]"><img class="lazyload object-cover bg-h-100 w-screen h-screen object-cover" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt=""></div>
+                            </s_cover_item_thumbnail>
+                            <s_cover_item_article_info>
+                              <div class="description flex flex-col text-h-200 absolute w-screen h-screen flex flex-col justify-center items-center gap-y-2 text-center z-20 [&_h2]:px-4 [&_a]:text-h-200 [&_a]:text-4xl [&_a]:font-bold">
+                                <h2><a class="text-h-800 dark:text-h-200" href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                              </div>
+                            </s_cover_item_article_info>
+                            <s_cover_item_not_article_info>
+                              <div class="description flex flex-col text-h-200 absolute w-screen h-screen flex flex-col justify-center items-center gap-y-2 text-center z-20 [&_h2]:px-4 [&_a]:text-h-200 [&_a]:text-4xl [&_a]:font-bold">
+                                <h2><a class="text-h-800 dark:text-h-200" href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                              </div>
+                            </s_cover_item_not_article_info>
+                          </div>
+                        </s_cover_item>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </section>
+                </s_cover>
               </s_cover_rep>
             </div>
           </s_cover_group>
