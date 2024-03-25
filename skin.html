@@ -16,9 +16,10 @@
       title="[##_title_##]"
       href="[##_rss_url_##]"
     />
+    <link rel="preconnect" href="//fonts.gstatic.com" />
     <link
       rel="stylesheet"
-      :href='"//cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"'
+      :href='"//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"'
     />
     <link
       rel="stylesheet"
@@ -61,10 +62,10 @@
 
       document.documentElement.classList.toggle("dark", TTDARK);
     </script>
-    <script defer src="./images/vendor.2ed71520030bce91499d.js"></script>
-    <script defer src="./images/app.2ed71520030bce91499d.js"></script>
+    <script defer src="./images/vendor.232c6e9b044448a229e6.js"></script>
+    <script defer src="./images/app.232c6e9b044448a229e6.js"></script>
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="./images/script.zlRw1O4MUO2N5jT7r7Nt.js"></script>
+    <script defer src="./images/script.Z1KyiA2cHPa1VS6B4ijr.js"></script>
   </head>
 
   <body
@@ -112,59 +113,61 @@
                     class="flex flex-col items-center px-4 lg:px-0 lg:w-idx lg:mx-auto"
                     data-mode="list"
                   >
-                    <div
+                    <h1
                       class="text-3xl font-bold text-h-600 dark:text-h-200 my-10 empty:my-10 lg:my-20"
                     >
                       [##_cover_title_##]
-                    </div>
+                    </h1>
                     <div class="list">
                       <s_cover_item>
                         <div class="post">
-                          <s_cover_item_thumbnail
-                            ><a class="thumbnail" href="[##_cover_item_url_##]"
-                              ><img
+                          <s_cover_item_thumbnail>
+                            <div
+                              class="thumbnail"
+                              href="[##_cover_item_url_##]"
+                            >
+                              <img
                                 class="lazyload object-cover bg-h-100"
                                 data-src="[##_cover_item_thumbnail_##]"
                                 data-sizes="auto"
-                                alt="" /></a
-                          ></s_cover_item_thumbnail>
+                                alt=""
+                              />
+                            </div>
+                          </s_cover_item_thumbnail>
                           <s_cover_item_article_info>
                             <div class="description flex flex-col">
-                              <div class="title">
+                              <a
+                                class="category text-sm text-h-400"
+                                href="[##_cover_item_category_url_##]"
+                                >[##_cover_item_category_##]</a
+                              >
+                              <h2>
                                 <a
                                   class="text-h-800 dark:text-h-200"
                                   href="[##_cover_item_url_##]"
                                   >[##_cover_item_title_##]</a
                                 >
-                              </div>
-                              <div class="metainfo flex gap-x-1 text-sm">
-                                <time class="text-h-400"
-                                  >[##_cover_item_simple_date_##]</time
-                                ><a
-                                  class="text-sm text-h-400"
-                                  href="[##_cover_item_category_url_##]"
-                                  >· [##_cover_item_category_##]</a
-                                >
-                              </div>
-                              <div
-                                class="summary relative overflow-hidden leading-7 text-sm text-h-500 dark:text-h-400"
+                              </h2>
+                              <time class="text-h-400 text-sm"
+                                >[##_cover_item_simple_date_##]</time
+                              >
+                              <p
+                                class="relative overflow-hidden leading-7 text-h-500 dark:text-h-400"
                               >
                                 [##_cover_item_summary_##]
-                              </div>
+                              </p>
                             </div>
                           </s_cover_item_article_info>
                           <s_cover_item_not_article_info>
                             <div class="description flex flex-col">
-                              <div class="title">
+                              <h2>
                                 <a
                                   class="text-h-800 dark:text-h-200"
                                   href="[##_cover_item_url_##]"
                                   >[##_cover_item_title_##]</a
                                 >
-                              </div>
-                              <div class="summary">
-                                [##_cover_item_summary_##]
-                              </div>
+                              </h2>
+                              <p>[##_cover_item_summary_##]</p>
                             </div>
                           </s_cover_item_not_article_info>
                         </div>
@@ -177,59 +180,61 @@
                     class="flex flex-col items-center px-4 lg:px-0 lg:w-idx lg:mx-auto"
                     data-mode="grid"
                   >
-                    <div
+                    <h1
                       class="text-3xl font-bold text-h-600 dark:text-h-200 my-10 empty:my-10 lg:my-20"
                     >
                       [##_cover_title_##]
-                    </div>
+                    </h1>
                     <div class="list">
                       <s_cover_item>
                         <div class="post">
-                          <s_cover_item_thumbnail
-                            ><a class="thumbnail" href="[##_cover_item_url_##]"
-                              ><img
+                          <s_cover_item_thumbnail>
+                            <div
+                              class="thumbnail"
+                              href="[##_cover_item_url_##]"
+                            >
+                              <img
                                 class="lazyload object-cover bg-h-100"
                                 data-src="[##_cover_item_thumbnail_##]"
                                 data-sizes="auto"
-                                alt="" /></a
-                          ></s_cover_item_thumbnail>
+                                alt=""
+                              />
+                            </div>
+                          </s_cover_item_thumbnail>
                           <s_cover_item_article_info>
                             <div class="description flex flex-col">
-                              <div class="title">
+                              <a
+                                class="category text-sm text-h-400"
+                                href="[##_cover_item_category_url_##]"
+                                >[##_cover_item_category_##]</a
+                              >
+                              <h2>
                                 <a
                                   class="text-h-800 dark:text-h-200"
                                   href="[##_cover_item_url_##]"
                                   >[##_cover_item_title_##]</a
                                 >
-                              </div>
-                              <div class="metainfo flex gap-x-1 text-sm">
-                                <time class="text-h-400"
-                                  >[##_cover_item_simple_date_##]</time
-                                ><a
-                                  class="text-sm text-h-400"
-                                  href="[##_cover_item_category_url_##]"
-                                  >· [##_cover_item_category_##]</a
-                                >
-                              </div>
-                              <div
-                                class="summary relative overflow-hidden leading-7 text-sm text-h-500 dark:text-h-400"
+                              </h2>
+                              <time class="text-h-400 text-sm"
+                                >[##_cover_item_simple_date_##]</time
+                              >
+                              <p
+                                class="relative overflow-hidden leading-7 text-h-500 dark:text-h-400"
                               >
                                 [##_cover_item_summary_##]
-                              </div>
+                              </p>
                             </div>
                           </s_cover_item_article_info>
                           <s_cover_item_not_article_info>
                             <div class="description flex flex-col">
-                              <div class="title">
+                              <h2>
                                 <a
                                   class="text-h-800 dark:text-h-200"
                                   href="[##_cover_item_url_##]"
                                   >[##_cover_item_title_##]</a
                                 >
-                              </div>
-                              <div class="summary">
-                                [##_cover_item_summary_##]
-                              </div>
+                              </h2>
+                              <p>[##_cover_item_summary_##]</p>
                             </div>
                           </s_cover_item_not_article_info>
                         </div>
@@ -242,59 +247,61 @@
                     class="flex flex-col items-center px-4 lg:px-0 lg:w-idx lg:mx-auto"
                     data-mode="zigzag"
                   >
-                    <div
+                    <h1
                       class="text-3xl font-bold text-h-600 dark:text-h-200 my-10 empty:my-10 lg:my-20"
                     >
                       [##_cover_title_##]
-                    </div>
+                    </h1>
                     <div class="list">
                       <s_cover_item>
                         <div class="post">
-                          <s_cover_item_thumbnail
-                            ><a class="thumbnail" href="[##_cover_item_url_##]"
-                              ><img
+                          <s_cover_item_thumbnail>
+                            <div
+                              class="thumbnail"
+                              href="[##_cover_item_url_##]"
+                            >
+                              <img
                                 class="lazyload object-cover bg-h-100"
                                 data-src="[##_cover_item_thumbnail_##]"
                                 data-sizes="auto"
-                                alt="" /></a
-                          ></s_cover_item_thumbnail>
+                                alt=""
+                              />
+                            </div>
+                          </s_cover_item_thumbnail>
                           <s_cover_item_article_info>
                             <div class="description flex flex-col">
-                              <div class="title">
+                              <a
+                                class="category text-sm text-h-400"
+                                href="[##_cover_item_category_url_##]"
+                                >[##_cover_item_category_##]</a
+                              >
+                              <h2>
                                 <a
                                   class="text-h-800 dark:text-h-200"
                                   href="[##_cover_item_url_##]"
                                   >[##_cover_item_title_##]</a
                                 >
-                              </div>
-                              <div class="metainfo flex gap-x-1 text-sm">
-                                <time class="text-h-400"
-                                  >[##_cover_item_simple_date_##]</time
-                                ><a
-                                  class="text-sm text-h-400"
-                                  href="[##_cover_item_category_url_##]"
-                                  >· [##_cover_item_category_##]</a
-                                >
-                              </div>
-                              <div
-                                class="summary relative overflow-hidden leading-7 text-sm text-h-500 dark:text-h-400"
+                              </h2>
+                              <time class="text-h-400 text-sm"
+                                >[##_cover_item_simple_date_##]</time
+                              >
+                              <p
+                                class="relative overflow-hidden leading-7 text-h-500 dark:text-h-400"
                               >
                                 [##_cover_item_summary_##]
-                              </div>
+                              </p>
                             </div>
                           </s_cover_item_article_info>
                           <s_cover_item_not_article_info>
                             <div class="description flex flex-col">
-                              <div class="title">
+                              <h2>
                                 <a
                                   class="text-h-800 dark:text-h-200"
                                   href="[##_cover_item_url_##]"
                                   >[##_cover_item_title_##]</a
                                 >
-                              </div>
-                              <div class="summary">
-                                [##_cover_item_summary_##]
-                              </div>
+                              </h2>
+                              <p>[##_cover_item_summary_##]</p>
                             </div>
                           </s_cover_item_not_article_info>
                         </div>
@@ -310,54 +317,46 @@
                     <div class="swiper w-full h-screen">
                       <div class="list swiper-wrapper">
                         <s_cover_item>
-                          <div class="post swiper-slide">
-                            <s_cover_item_thumbnail
-                              ><a
+                          <div
+                            class="post swiper-slide flex justify-center items-center before:absolute before:right-0 before:top-0 before:w-full before:h-screen before:bg-h-900/60 before:z-10"
+                          >
+                            <s_cover_item_thumbnail>
+                              <div
                                 class="thumbnail"
                                 href="[##_cover_item_url_##]"
-                                ><img
-                                  class="lazyload object-cover bg-h-100"
+                              >
+                                <img
+                                  class="lazyload object-cover bg-h-100 w-screen h-screen object-cover"
                                   data-src="[##_cover_item_thumbnail_##]"
                                   data-sizes="auto"
-                                  alt="" /></a
-                            ></s_cover_item_thumbnail>
+                                  alt=""
+                                />
+                              </div>
+                            </s_cover_item_thumbnail>
                             <s_cover_item_article_info>
-                              <div class="description flex flex-col">
-                                <div class="title">
+                              <div
+                                class="description flex flex-col text-h-200 absolute w-screen h-screen flex flex-col justify-center items-center gap-y-2 text-center z-20 [&_h2]:px-4 [&_a]:text-h-200 [&_a]:text-4xl [&_a]:font-bold"
+                              >
+                                <h2>
                                   <a
                                     class="text-h-800 dark:text-h-200"
                                     href="[##_cover_item_url_##]"
                                     >[##_cover_item_title_##]</a
                                   >
-                                </div>
-                                <div class="metainfo flex gap-x-1 text-sm">
-                                  <time class="text-h-400"
-                                    >[##_cover_item_simple_date_##]</time
-                                  ><a
-                                    class="text-sm text-h-400"
-                                    href="[##_cover_item_category_url_##]"
-                                    >· [##_cover_item_category_##]</a
-                                  >
-                                </div>
-                                <div
-                                  class="summary relative overflow-hidden leading-7 text-sm text-h-500 dark:text-h-400"
-                                >
-                                  [##_cover_item_summary_##]
-                                </div>
+                                </h2>
                               </div>
                             </s_cover_item_article_info>
                             <s_cover_item_not_article_info>
-                              <div class="description flex flex-col">
-                                <div class="title">
+                              <div
+                                class="description flex flex-col text-h-200 absolute w-screen h-screen flex flex-col justify-center items-center gap-y-2 text-center z-20 [&_h2]:px-4 [&_a]:text-h-200 [&_a]:text-4xl [&_a]:font-bold"
+                              >
+                                <h2>
                                   <a
                                     class="text-h-800 dark:text-h-200"
                                     href="[##_cover_item_url_##]"
                                     >[##_cover_item_title_##]</a
                                   >
-                                </div>
-                                <div class="summary">
-                                  [##_cover_item_summary_##]
-                                </div>
+                                </h2>
                               </div>
                             </s_cover_item_not_article_info>
                           </div>
@@ -387,9 +386,6 @@
                     ><textarea
                       class="border-0 resize-none p-0 pr-5 h-full overflow-x-hidden overflow-y-scroll text-sm box-border outline-none w-[calc(100%+theme(spacing.10))] bg-h-200 dark:bg-h-700"
                       id="text"
-                      x-data="{ disabled: /^(?!.*tistory\.com).*$/.test(location.hostname) && T.config.NEED_COMMENT_LOGIN }"
-                      :placeholder='disabled && "이 블로그는 2차 도메인을 사용 중입니다. 댓글을 작성하려면 "+TistoryBlog.tistoryUrl+" 으로 이동해주세요."'
-                      :disabled="disabled"
                       name="[##_guest_textarea_body_##]"
                     ></textarea>
                     <div class="flex items-end justify-end">
@@ -580,11 +576,11 @@
             <s_permalink_article_rep>
               <div id="permalink">
                 <header
-                  class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-200 dark:border-b-h-700 lg:mb-16"
+                  class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-300 dark:border-b-h-700 lg:mb-16"
                 >
                   <s_article_rep_thumbnail>
                     <div
-                      class="thumbnail absolute right-0 top-0 w-full h-64 before:backdrop-blur before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
+                      class="thumbnail absolute right-0 top-0 w-full h-64 before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
                     >
                       <img
                         class="absolute right-0 top-0 w-full h-64 z-0 object-cover"
@@ -594,16 +590,17 @@
                     </div>
                   </s_article_rep_thumbnail>
                   <div
-                    class="description flex flex-col items-center gap-y-3 z-20 relative mx-4 text-h-800 dark:text-h-200 lg:mx-0"
+                    class="description flex flex-col items-center gap-y-2 z-20 relative mx-4 text-h-800 dark:text-h-200 lg:mx-0"
                   >
+                    <a href="[##_article_rep_category_link_##]"
+                      >[##_article_rep_category_##]</a
+                    >
                     <h1 class="text-center font-bold text-2xl lg:text-3xl">
                       [##_article_rep_title_##]
                     </h1>
-                    <div class="flex gap-x-1 text-sm">
-                      <time>[##_article_rep_date_##]</time
-                      ><a href="[##_article_rep_category_link_##]"
-                        >· [##_article_rep_category_##]</a
-                      ><span class="admin flex gap-x-1">
+                    <div class="flex gap-x-2">
+                      <time class="text-sm">[##_article_rep_date_##]</time
+                      ><span class="admin flex gap-x-2 text-sm">
                         <s_ad_div
                           ><a href="[##_s_ad_m_link_##]">수정</a
                           ><a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a
@@ -655,14 +652,14 @@
                           </div> </template
                       ></s_if_var_toc>
                       <div id="article" x-ref="article">
-                        <template x-ref="articleTemplate" x-teleport="#article">
+                        <template x-ref="_article_" x-teleport="#article">
                           <div>[##_article_rep_desc_##]</div>
                         </template>
                       </div>
                       <s_if_var_scrollspy
                         ><template x-if="$data.headings.length > 0">
                           <div
-                            class="2xl:absolute 2xl:top-0 2xl:h-full 2xl:ml-[calc(((1100px+theme(width.pem))/2)+theme(spacing.5))]"
+                            class="2xl:absolute 2xl:top-0 2xl:h-full 2xl:ml-[calc(((1100px+theme(spacing.pem))/2)+theme(spacing.5))]"
                             id="scrollspy"
                             x-data="scrollspy"
                             @scroll.window="scrollspy"
@@ -684,41 +681,34 @@
                                 ><i class="fa-solid fa-list-check"></i>
                               </button>
                               <div
-                                class="max-h-[calc(100vh-theme(spacing.20)-theme(spacing.10)-theme(spacing.3)-2rem)] overflow-hidden w-56 text-sm box-border max-2xl:transition-[right] max-2xl:duration-200 max-2xl:rounded-xl max-2xl:fixed max-2xl:top-20 max-2xl:right-4 max-2xl:z-40 max-2xl:bg-h-200 max-2xl:dark:bg-h-700 2xl:block"
+                                class="w-56 text-sm box-border max-2xl:transition-[right] max-2xl:duration-200 max-2xl:rounded-xl max-2xl:p-6 max-2xl:pr-8 max-2xl:fixed max-2xl:top-20 max-2xl:right-4 max-2xl:z-40 max-2xl:bg-h-200 max-2xl:dark:bg-h-700 2xl:px-6 2xl:block"
                                 :class='open ? "max-2xl:right-4" : "max-2xl:-right-60"'
                               >
-                                <div
-                                  class="overflow-x-hidden overflow-y-scroll max-h-[inherit] w-[calc(theme(spacing.56)+theme(spacing.5))]"
+                                <button
+                                  class="absolute text-base top-2 right-4 text-h-500 dark:text-h-200 2xl:hidden"
+                                  @click="toggle"
                                 >
-                                  <button
-                                    class="absolute text-base top-2 right-4 text-h-500 dark:text-h-200 2xl:hidden"
-                                    @click="toggle"
+                                  <span class="text-hidden">목차 닫기</span
+                                  ><i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <ul class="flex flex-col gap-y-3" x-ref="spy">
+                                  <template
+                                    x-for="heading in $data.headings"
+                                    :key="heading.id"
                                   >
-                                    <span class="text-hidden">목차 닫기</span
-                                    ><i class="fa-solid fa-xmark"></i>
-                                  </button>
-                                  <ol
-                                    class="flex flex-col gap-y-3 max-2xl:p-6 max-2xl:pt-8 max-2xl:pr-14 2xl:px-8"
-                                    x-ref="spy"
-                                  >
-                                    <template
-                                      x-for="heading in $data.headings"
-                                      :key="heading.id"
+                                    <li
+                                      class="text-h-400"
+                                      :class='{ "pl-0": heading.tagName === "H2", "pl-4": heading.tagName === "H3" }'
                                     >
-                                      <li
-                                        class="text-h-400"
-                                        :class='{ "pl-0": heading.tagName === "H2", "pl-4": heading.tagName === "H3" }'
-                                      >
-                                        <a
-                                          class="duration-200 text-h-400 hover:text-h-600 dark:hover:text-h-200"
-                                          :href="heading.href"
-                                          x-text="heading.text"
-                                          :class='{ "text-h-600 dark:text-h-200": heading.active }'
-                                        ></a>
-                                      </li>
-                                    </template>
-                                  </ol>
-                                </div>
+                                      <a
+                                        class="duration-200 text-h-400 hover:text-h-600 dark:hover:text-h-200"
+                                        :href="heading.href"
+                                        x-text="heading.text"
+                                        :class='{ "text-h-600 dark:text-h-200": heading.active }'
+                                      ></a>
+                                    </li>
+                                  </template>
+                                </ul>
                               </div>
                             </div>
                           </div> </template
@@ -729,10 +719,10 @@
                     x-data="{ shown: false }"
                     x-intersect.once="shown = true"
                   >
-                    <footer x-show="shown">
+                    <footer class="mt-4" x-show="shown">
                       <s_article_related>
                         <div
-                          class="rounded-md p-5 mt-4 mb-2 box-border bg-h-200 text-h-500 dark:bg-h-700 dark:text-h-200"
+                          class="rounded-md p-5 mt-4 mb-0 box-border bg-h-200 text-h-500 dark:bg-h-700 dark:text-h-200"
                         >
                           <div
                             class="font-bold flex items-center justify-between text-overflow-hidden text-sm pb-2 mb-4 border-b border-solid border-h-400 dark:border-h-200"
@@ -740,7 +730,10 @@
                             <span
                               >'[##_article_rep_category_##]' 카테고리의 다른
                               글</span
-                            ><i class="fas fa-bars"></i>
+                            ><a
+                              href="https://yamyam-spaghetti.tistory.com/category/[##_article_rep_category_##]"
+                              ><i class="fas fa-bars"></i
+                            ></a>
                           </div>
                           <ul class="flex flex-col gap-y-2">
                             <s_article_related_rep>
@@ -760,7 +753,10 @@
                         </div>
                       </s_article_related>
                       <s_tag_label>
-                        <div class="flex flex-wrap gap-x-1 text-[0]" id="tags">
+                        <div
+                          class="mt-2 flex flex-wrap gap-x-1.5 text-[0]"
+                          id="tags"
+                        >
                           [##_tag_label_rep_##]
                         </div>
                       </s_tag_label>
@@ -787,12 +783,12 @@
                     </footer>
                   </div>
                 </div>
-                <div
-                  class="px-4 lg:px-0 lg:max-w-screen-lg lg:w-pem lg:mx-auto"
-                  x-data="{ shown: false }"
-                  x-intersect.once="shown = true"
-                >
-                  <s_rp>
+                <s_rp>
+                  <div
+                    class="px-4 lg:px-0 lg:max-w-screen-lg lg:w-pem lg:mx-auto"
+                    x-data="{ shown: false }"
+                    x-intersect.once="shown = true"
+                  >
                     <div x-show="shown">
                       <s_rp_input_form>
                         <div
@@ -805,9 +801,6 @@
                             ><textarea
                               class="border-0 resize-none p-0 pr-5 h-full overflow-x-hidden overflow-y-scroll text-sm box-border outline-none w-[calc(100%+theme(spacing.10))] bg-h-200 dark:bg-h-700"
                               id="text"
-                              x-data="{ disabled: /^(?!.*tistory\.com).*$/.test(location.hostname) && T.config.NEED_COMMENT_LOGIN }"
-                              :placeholder='disabled && "이 블로그는 2차 도메인을 사용 중입니다. 댓글을 작성하려면 "+TistoryBlog.tistoryUrl+" 으로 이동해주세요."'
-                              :disabled="disabled"
                               name="[##_rp_input_comment_##]"
                             ></textarea>
                             <div class="flex items-end justify-end">
@@ -997,34 +990,34 @@
                         </div>
                       </s_rp_container>
                     </div>
-                  </s_rp>
-                </div>
+                  </div>
+                </s_rp>
               </div>
             </s_permalink_article_rep>
             <s_page_rep>
               <div id="page">
                 <header
-                  class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-200 dark:border-b-h-700 lg:mb-16"
+                  class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-300 dark:border-b-h-700 lg:mb-16"
                 >
                   <s_article_rep_thumbnail>
                     <div
-                      class="thumbnail absolute right-0 top-0 w-full h-64 before:backdrop-blur before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
+                      class="thumbnail absolute right-0 top-0 w-full h-64 before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
                     >
                       <img
                         class="absolute right-0 top-0 w-full h-64 z-0 object-cover"
-                        src="[##_article_rep_thumbnail_url_##]"
+                        src="[##_article_rep_thumbnail_##]"
                         alt=""
                       />
                     </div>
                   </s_article_rep_thumbnail>
                   <div
-                    class="description flex flex-col items-center gap-y-3 z-20 relative mx-4 text-h-800 dark:text-h-200 lg:mx-0"
+                    class="description flex flex-col items-center gap-y-2 z-20 relative mx-4 text-h-800 dark:text-h-200 lg:mx-0"
                   >
                     <h1 class="text-center font-bold text-2xl lg:text-3xl">
                       [##_article_rep_title_##]
                     </h1>
-                    <div class="flex gap-x-1 text-sm">
-                      <time>[##_article_rep_date_##]</time>
+                    <div class="flex gap-x-2">
+                      <time class="text-sm">[##_article_rep_date_##]</time>
                     </div>
                   </div>
                 </header>
@@ -1068,14 +1061,14 @@
                           </div> </template
                       ></s_if_var_toc>
                       <div id="article" x-ref="article">
-                        <template x-ref="articleTemplate" x-teleport="#article">
+                        <template x-ref="_article_" x-teleport="#article">
                           <div>[##_article_rep_desc_##]</div>
                         </template>
                       </div>
                       <s_if_var_scrollspy
                         ><template x-if="$data.headings.length > 0">
                           <div
-                            class="2xl:absolute 2xl:top-0 2xl:h-full 2xl:ml-[calc(((1100px+theme(width.pem))/2)+theme(spacing.5))]"
+                            class="2xl:absolute 2xl:top-0 2xl:h-full 2xl:ml-[calc(((1100px+theme(spacing.pem))/2)+theme(spacing.5))]"
                             id="scrollspy"
                             x-data="scrollspy"
                             @scroll.window="scrollspy"
@@ -1097,41 +1090,34 @@
                                 ><i class="fa-solid fa-list-check"></i>
                               </button>
                               <div
-                                class="max-h-[calc(100vh-theme(spacing.20)-theme(spacing.10)-theme(spacing.3)-2rem)] overflow-hidden w-56 text-sm box-border max-2xl:transition-[right] max-2xl:duration-200 max-2xl:rounded-xl max-2xl:fixed max-2xl:top-20 max-2xl:right-4 max-2xl:z-40 max-2xl:bg-h-200 max-2xl:dark:bg-h-700 2xl:block"
+                                class="w-56 text-sm box-border max-2xl:transition-[right] max-2xl:duration-200 max-2xl:rounded-xl max-2xl:p-6 max-2xl:pr-8 max-2xl:fixed max-2xl:top-20 max-2xl:right-4 max-2xl:z-40 max-2xl:bg-h-200 max-2xl:dark:bg-h-700 2xl:px-6 2xl:block"
                                 :class='open ? "max-2xl:right-4" : "max-2xl:-right-60"'
                               >
-                                <div
-                                  class="overflow-x-hidden overflow-y-scroll max-h-[inherit] w-[calc(theme(spacing.56)+theme(spacing.5))]"
+                                <button
+                                  class="absolute text-base top-2 right-4 text-h-500 dark:text-h-200 2xl:hidden"
+                                  @click="toggle"
                                 >
-                                  <button
-                                    class="absolute text-base top-2 right-4 text-h-500 dark:text-h-200 2xl:hidden"
-                                    @click="toggle"
+                                  <span class="text-hidden">목차 닫기</span
+                                  ><i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <ul class="flex flex-col gap-y-3" x-ref="spy">
+                                  <template
+                                    x-for="heading in $data.headings"
+                                    :key="heading.id"
                                   >
-                                    <span class="text-hidden">목차 닫기</span
-                                    ><i class="fa-solid fa-xmark"></i>
-                                  </button>
-                                  <ol
-                                    class="flex flex-col gap-y-3 max-2xl:p-6 max-2xl:pt-8 max-2xl:pr-14 2xl:px-8"
-                                    x-ref="spy"
-                                  >
-                                    <template
-                                      x-for="heading in $data.headings"
-                                      :key="heading.id"
+                                    <li
+                                      class="text-h-400"
+                                      :class='{ "pl-0": heading.tagName === "H2", "pl-4": heading.tagName === "H3" }'
                                     >
-                                      <li
-                                        class="text-h-400"
-                                        :class='{ "pl-0": heading.tagName === "H2", "pl-4": heading.tagName === "H3" }'
-                                      >
-                                        <a
-                                          class="duration-200 text-h-400 hover:text-h-600 dark:hover:text-h-200"
-                                          :href="heading.href"
-                                          x-text="heading.text"
-                                          :class='{ "text-h-600 dark:text-h-200": heading.active }'
-                                        ></a>
-                                      </li>
-                                    </template>
-                                  </ol>
-                                </div>
+                                      <a
+                                        class="duration-200 text-h-400 hover:text-h-600 dark:hover:text-h-200"
+                                        :href="heading.href"
+                                        x-text="heading.text"
+                                        :class='{ "text-h-600 dark:text-h-200": heading.active }'
+                                      ></a>
+                                    </li>
+                                  </template>
+                                </ul>
                               </div>
                             </div>
                           </div> </template
@@ -1142,7 +1128,7 @@
                     x-data="{ shown: false }"
                     x-intersect.once="shown = true"
                   >
-                    <footer x-show="shown">
+                    <footer class="mt-4" x-show="shown">
                       <div
                         class="border-t border-b border-dotted border-h-400 mt-6 py-8 flex gap-x-5 items-center"
                       >
@@ -1220,30 +1206,30 @@
                 data-mode="list"
               >
                 <div class="post">
-                  <s_notice_rep_thumbnail
-                    ><a class="thumbnail" href="[##_notice_rep_link_##]"
-                      ><img
+                  <s_notice_rep_thumbnail>
+                    <div class="thumbnail" href="[##_notice_rep_link_##]">
+                      <img
                         class="lazyload object-cover bg-h-100"
                         data-src="[##_notice_rep_thumbnail_url_##]"
                         data-sizes="auto"
-                        alt="" /></a
-                  ></s_notice_rep_thumbnail>
+                        alt=""
+                      />
+                    </div>
+                  </s_notice_rep_thumbnail>
                   <div class="description flex flex-col">
-                    <div class="title">
+                    <h2>
                       <a
                         class="text-h-800 dark:text-h-200 [&_img]:hidden"
                         href="[##_notice_rep_link_##]"
                         >[##_notice_rep_title_##]</a
                       >
-                    </div>
-                    <div class="metainfo flex gap-x-1 text-sm">
-                      <time class="text-h-400">[##_notice_rep_date_##]</time>
-                    </div>
-                    <div
-                      class="summary relative overflow-hidden text-h-400 leading-7 text-sm"
+                    </h2>
+                    <time class="text-h-400 text-sm"
+                      >[##_notice_rep_date_##]</time
                     >
+                    <p class="relative overflow-hidden text-h-400 leading-7">
                       [##_notice_rep_summary_##]
-                    </div>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1251,11 +1237,11 @@
             <s_permalink_article_rep>
               <div id="permalink">
                 <header
-                  class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-200 dark:border-b-h-700 lg:mb-16"
+                  class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-300 dark:border-b-h-700 lg:mb-16"
                 >
                   <s_notice_rep_thumbnail>
                     <div
-                      class="thumbnail absolute right-0 top-0 w-full h-64 before:backdrop-blur before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
+                      class="thumbnail absolute right-0 top-0 w-full h-64 before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
                     >
                       <img
                         class="absolute right-0 top-0 w-full h-64 z-0 object-cover"
@@ -1265,14 +1251,14 @@
                     </div>
                   </s_notice_rep_thumbnail>
                   <div
-                    class="description flex flex-col items-center gap-y-3 z-20 relative mx-4 text-h-800 dark:text-h-200 lg:mx-0"
+                    class="description flex flex-col items-center gap-y-2 z-20 relative mx-4 text-h-800 dark:text-h-200 lg:mx-0"
                   >
+                    <a class="/notice">공지사항</a>
                     <h1 class="text-center font-bold text-2xl lg:text-3xl">
                       [##_notice_rep_title_##]
                     </h1>
-                    <div class="flex gap-x-1 text-sm">
-                      <time>[##_notice_rep_date_##]</time
-                      ><a class="/notice">· 공지사항</a>
+                    <div class="flex gap-x-2">
+                      <time class="text-sm">[##_notice_rep_date_##]</time>
                     </div>
                   </div>
                 </header>
@@ -1316,14 +1302,14 @@
                           </div> </template
                       ></s_if_var_toc>
                       <div id="article" x-ref="article">
-                        <template x-ref="articleTemplate" x-teleport="#article">
+                        <template x-ref="_article_" x-teleport="#article">
                           <div>[##_notice_rep_desc_##]</div>
                         </template>
                       </div>
                       <s_if_var_scrollspy
                         ><template x-if="$data.headings.length > 0">
                           <div
-                            class="2xl:absolute 2xl:top-0 2xl:h-full 2xl:ml-[calc(((1100px+theme(width.pem))/2)+theme(spacing.5))]"
+                            class="2xl:absolute 2xl:top-0 2xl:h-full 2xl:ml-[calc(((1100px+theme(spacing.pem))/2)+theme(spacing.5))]"
                             id="scrollspy"
                             x-data="scrollspy"
                             @scroll.window="scrollspy"
@@ -1345,41 +1331,34 @@
                                 ><i class="fa-solid fa-list-check"></i>
                               </button>
                               <div
-                                class="max-h-[calc(100vh-theme(spacing.20)-theme(spacing.10)-theme(spacing.3)-2rem)] overflow-hidden w-56 text-sm box-border max-2xl:transition-[right] max-2xl:duration-200 max-2xl:rounded-xl max-2xl:fixed max-2xl:top-20 max-2xl:right-4 max-2xl:z-40 max-2xl:bg-h-200 max-2xl:dark:bg-h-700 2xl:block"
+                                class="w-56 text-sm box-border max-2xl:transition-[right] max-2xl:duration-200 max-2xl:rounded-xl max-2xl:p-6 max-2xl:pr-8 max-2xl:fixed max-2xl:top-20 max-2xl:right-4 max-2xl:z-40 max-2xl:bg-h-200 max-2xl:dark:bg-h-700 2xl:px-6 2xl:block"
                                 :class='open ? "max-2xl:right-4" : "max-2xl:-right-60"'
                               >
-                                <div
-                                  class="overflow-x-hidden overflow-y-scroll max-h-[inherit] w-[calc(theme(spacing.56)+theme(spacing.5))]"
+                                <button
+                                  class="absolute text-base top-2 right-4 text-h-500 dark:text-h-200 2xl:hidden"
+                                  @click="toggle"
                                 >
-                                  <button
-                                    class="absolute text-base top-2 right-4 text-h-500 dark:text-h-200 2xl:hidden"
-                                    @click="toggle"
+                                  <span class="text-hidden">목차 닫기</span
+                                  ><i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <ul class="flex flex-col gap-y-3" x-ref="spy">
+                                  <template
+                                    x-for="heading in $data.headings"
+                                    :key="heading.id"
                                   >
-                                    <span class="text-hidden">목차 닫기</span
-                                    ><i class="fa-solid fa-xmark"></i>
-                                  </button>
-                                  <ol
-                                    class="flex flex-col gap-y-3 max-2xl:p-6 max-2xl:pt-8 max-2xl:pr-14 2xl:px-8"
-                                    x-ref="spy"
-                                  >
-                                    <template
-                                      x-for="heading in $data.headings"
-                                      :key="heading.id"
+                                    <li
+                                      class="text-h-400"
+                                      :class='{ "pl-0": heading.tagName === "H2", "pl-4": heading.tagName === "H3" }'
                                     >
-                                      <li
-                                        class="text-h-400"
-                                        :class='{ "pl-0": heading.tagName === "H2", "pl-4": heading.tagName === "H3" }'
-                                      >
-                                        <a
-                                          class="duration-200 text-h-400 hover:text-h-600 dark:hover:text-h-200"
-                                          :href="heading.href"
-                                          x-text="heading.text"
-                                          :class='{ "text-h-600 dark:text-h-200": heading.active }'
-                                        ></a>
-                                      </li>
-                                    </template>
-                                  </ol>
-                                </div>
+                                      <a
+                                        class="duration-200 text-h-400 hover:text-h-600 dark:hover:text-h-200"
+                                        :href="heading.href"
+                                        x-text="heading.text"
+                                        :class='{ "text-h-600 dark:text-h-200": heading.active }'
+                                      ></a>
+                                    </li>
+                                  </template>
+                                </ul>
                               </div>
                             </div>
                           </div> </template
@@ -1390,7 +1369,7 @@
                     x-data="{ shown: false }"
                     x-intersect.once="shown = true"
                   >
-                    <footer x-show="shown">
+                    <footer class="mt-4" x-show="shown">
                       <div
                         class="border-t border-b border-dotted border-h-400 mt-6 py-8 flex gap-x-5 items-center"
                       >
@@ -1423,13 +1402,13 @@
               id="tag-cloud"
             >
               <ul
-                class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
+                class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
               >
                 <s_tag_rep>
-                  <li
-                    class="px-4 py-5 text-overflow-hidden text-center rounded-md duration-200 w-full bg-h-200 text-h-500 hover:bg-h-600 hover:text-h-200 dark:text-h-400 dark:bg-h-700 dark:hover:bg-h-600"
-                  >
-                    <a class="[##_tag_class_##]" href="[##_tag_link_##]"
+                  <li>
+                    <a
+                      class="[##_tag_class_##] text-overflow-hidden text-center inline-block px-4 py-5 rounded-md duration-200 w-full bg-h-200 text-h-600 hover:bg-h-600 hover:text-h-200 dark:text-h-400 dark:bg-h-700 dark:hover:bg-h-600"
+                      href="[##_tag_link_##]"
                       >[##_tag_name_##]</a
                     >
                   </li>
@@ -1440,11 +1419,11 @@
           <s_list>
             <section data-mode="[##_list_style_##]">
               <header
-                class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-200 dark:border-b-h-700 lg:mb-16"
+                class="h-64 mb-10 flex justify-center items-center border-b border-b-solid border-b-h-300 dark:border-b-h-700 lg:mb-16"
               >
                 <s_list_image>
                   <div
-                    class="thumbnail absolute right-0 top-0 w-full h-64 before:backdrop-blur before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
+                    class="thumbnail absolute right-0 top-0 w-full h-64 before:content-[&quot;&quot;] before:absolute before:right-0 before:top-0 before:w-full before:h-64 before:bg-h-900/50 before:z-10 [&+.description]:text-h-200"
                   >
                     <img
                       class="absolute right-0 top-0 w-full h-64 z-0 object-cover"
@@ -1456,44 +1435,46 @@
                 <div
                   class="description flex flex-col items-center z-20 relative mx-4 text-center text-h-800 dark:text-h-200 lg:mx-0"
                 >
-                  <h1 class="font-semibold text-2xl lg:text-3xl">
+                  <h1 class="font-bold text-2xl lg:text-3xl">
                     [##_list_conform_##]
                   </h1>
-                  <span class="mt-3 empty:mt-0">[##_list_description_##]</span>
+                  <span class="font-bold mt-3 empty:mt-0"
+                    >[##_list_description_##]</span
+                  >
                 </div>
               </header>
               <div class="list px-4 lg:px-0 lg:w-idx lg:mx-auto" x-ref="list">
                 <s_list_rep>
                   <div class="post">
-                    <s_list_rep_thumbnail
-                      ><a class="thumbnail" href="[##_list_rep_link_##]"
-                        ><img
+                    <s_list_rep_thumbnail>
+                      <div class="thumbnail" href="[##_list_rep_link_##]">
+                        <img
                           class="lazyload object-cover bg-h-100"
                           data-src="[##_list_rep_thumbnail_##]"
                           data-sizes="auto"
-                          alt="" /></a
-                    ></s_list_rep_thumbnail>
+                          alt=""
+                        />
+                      </div>
+                    </s_list_rep_thumbnail>
                     <div class="description flex flex-col">
-                      <div class="title">
+                      <a
+                        class="text-sm text-h-400"
+                        href="[##_list_rep_category_link_##]"
+                        >[##_list_rep_category_##]</a
+                      >
+                      <h2>
                         <a
                           class="text-h-800 dark:text-h-200 [&_img]:hidden"
                           href="[##_list_rep_link_##]"
                           >[##_list_rep_title_##]</a
                         >
-                      </div>
-                      <div class="metainfo flex gap-x-1 text-sm">
-                        <time class="text-h-400">[##_list_rep_regdate_##]</time
-                        ><a
-                          class="text-h-400"
-                          href="[##_list_rep_category_link_##]"
-                          >· [##_list_rep_category_##]</a
-                        >
-                      </div>
-                      <div
-                        class="summary relative overflow-hidden text-h-400 leading-7 text-sm"
+                      </h2>
+                      <time class="text-h-400 text-sm"
+                        >[##_list_rep_regdate_##]</time
                       >
+                      <p class="relative overflow-hidden text-h-400 leading-7">
                         [##_list_rep_summary_##]
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </s_list_rep>
@@ -1506,10 +1487,10 @@
               id="paging"
             >
               <li>
-                <a class="[##_no_more_prev_##]" [##_prev_page_##]=""
-                  ><span class="text-hidden">이전</span
-                  ><i class="fa fa-angle-left"></i
-                ></a>
+                <div class="[##_no_more_prev_##]" [##_prev_page_##]="">
+                  <span class="text-hidden">이전</span
+                  ><i class="fa fa-angle-left"></i>
+                </div>
               </li>
               <s_paging_rep>
                 <li>
@@ -1517,21 +1498,21 @@
                 </li>
               </s_paging_rep>
               <li>
-                <a class="[##_no_more_next_##]" [##_next_page_##]=""
-                  ><i class="fa fa-angle-right"></i
-                  ><span class="text-hidden">다음</span></a
-                >
+                <div class="[##_no_more_next_##]" [##_next_page_##]="">
+                  <i class="fa fa-angle-right"></i
+                  ><span class="text-hidden">다음</span>
+                </div>
               </li>
             </ul>
           </s_paging>
         </main>
         <aside
-          class="h-full fixed top-0 w-s overflow-hidden z-40 transition-[left] duration-200 p-0 bg-h-200 dark:bg-h-700 <s_if_var_sidebar>xl:left-0</s_if_var_sidebar>"
+          class="h-full fixed top-0 w-sidebar overflow-hidden z-40 transition-[left] duration-200 p-0 bg-h-200 dark:bg-h-700 <s_if_var_sidebar>xl:left-0</s_if_var_sidebar>"
           id="sidebar"
-          :class='sidebar ? "left-0" : "-left-[calc(theme(width.s))]"'
+          :class='sidebar ? "left-0" : "-left-64"'
         >
           <div
-            class="flex flex-col gap-y-6 overflow-x-hidden overflow-y-scroll h-full w-[calc(theme(width.s)+theme(spacing.8))] absolute py-6 border-box"
+            class="flex flex-col gap-y-6 overflow-x-hidden overflow-y-scroll h-full w-[calc(theme(width.sidebar)+theme(spacing.8))] absolute py-6 border-box"
           >
             <s_sidebar>
               <s_sidebar_element
@@ -1587,12 +1568,12 @@
                 <div class="sidebar-element">
                   <s_search>
                     <div
-                      class="flex items-center gap-x-3 border-box px-4 py-3 bg-h-300 text-h-600 dark:bg-h-600 dark:text-h-300"
+                      class="flex items-center gap-x-3 border-box px-4 py-3 rounded-md bg-h-300 text-h-300 dark:bg-h-600"
                     >
                       <label for="search"
                         ><span class="text-hidden">검색</span
                         ><i
-                          class="text-sm fa-solid fa-magnifying-glass"
+                          class="text-base fa-solid fa-magnifying-glass"
                         ></i></label
                       ><input
                         class="text-sm text-overflow-hidden border-none outline-none bg-h-300 dark:bg-h-600"
@@ -1628,9 +1609,9 @@
                   <div>
                     <h2><a class="link_tit" href="/notice">공지사항</a></h2>
                     <s_rct_notice>
-                      <ul class="flex flex-col gap-y-4 text-sm">
+                      <ul class="flex flex-col gap-y-3">
                         <s_rct_notice_rep>
-                          <li>
+                          <li class="text-sm">
                             <i class="fa-regular fa-bell text-h-400 mr-2"></i
                             ><a href="[##_notice_rep_link_##]"
                               >[##_notice_rep_title_##]</a
@@ -1647,20 +1628,20 @@
                 <div class="sidebar-element">
                   <div>
                     <h2>인기 글</h2>
-                    <ul class="flex flex-col gap-y-4 text-sm">
+                    <ul class="flex flex-col gap-y-2">
                       <s_rctps_popular_rep>
-                        <li class="flex justify-between">
-                          <div class="text-overflow-hidden text-h-400">
+                        <li class="flex justify-between text-h-400 text-sm">
+                          <div class="text-overflow-hidden">
                             <a href="[##_rctps_rep_link_##]"
                               >[##_rctps_rep_title_##]</a
                             >
-                            <div class="mt-1 text-xs">
+                            <div class="text-h-400 mt-1 text-xs">
                               [##_rctps_rep_simple_date_##]
                             </div>
                           </div>
                           <s_rctps_rep_thumbnail
                             ><img
-                              class="lazyload object-cover ml-3 bg-h-100 w-16 h-11"
+                              class="lazyload w-16 h-11 object-cover ml-3 bg-h-100"
                               data-src="[##_rctps_rep_thumbnail_##]"
                               data-sizes="auto"
                               alt=""
@@ -1678,10 +1659,10 @@
                 <div class="sidebar-element">
                   <div>
                     <h2><a class="link_tit" href="/tag">태그</a></h2>
-                    <ul class="flex flex-col gap-y-4 text-sm">
+                    <ul class="flex flex-col gap-y-2">
                       <s_random_tags>
-                        <li>
-                          <i class="fa fa-tag mr-2"></i
+                        <li class="text-sm">
+                          <i class="fa fa-hashtag mr-2"></i
                           ><a class="[##_tag_class_##]" href="[##_tag_link_##]"
                             >[##_tag_name_##]</a
                           >
@@ -1696,10 +1677,10 @@
                 <div class="sidebar-element">
                   <div>
                     <h2>최근 댓글</h2>
-                    <ul class="flex flex-col gap-y-4">
+                    <ul class="flex flex-col gap-y-2">
                       <s_rctrp_rep>
-                        <li class="text-h-400">
-                          <div class="text-overflow-hidden text-sm">
+                        <li class="text-sm text-h-400">
+                          <div class="text-overflow-hidden">
                             <i
                               class="fa-regular fa-comment-dots font-normal mr-2"
                             ></i
@@ -1707,9 +1688,8 @@
                               >[##_rctrp_rep_desc_##]</a
                             >
                           </div>
-                          <div class="mt-1 text-h-400 text-xs flex gap-x-1">
-                            <div>[##_rctrp_rep_name_##]</div>
-                            <div>· [##_rctrp_rep_time_##]</div>
+                          <div class="mt-1 text-h-400">
+                            [##_rctrp_rep_name_##]
                           </div>
                         </li>
                       </s_rctrp_rep>
@@ -1722,20 +1702,20 @@
                 <div class="sidebar-element">
                   <div>
                     <h2>최근 글</h2>
-                    <ul class="flex flex-col gap-y-4 text-sm">
+                    <ul class="flex flex-col gap-y-2">
                       <s_rctps_rep>
-                        <li class="flex justify-between">
-                          <div class="text-overflow-hidden text-h-400">
+                        <li class="flex justify-between text-sm">
+                          <div class="text-overflow-hidden">
                             <a href="[##_rctps_rep_link_##]"
                               >[##_rctps_rep_title_##]</a
                             >
-                            <div class="mt-1 text-xs">
+                            <div class="text-h-400 mt-1 text-xs">
                               [##_rctps_rep_simple_date_##]
                             </div>
                           </div>
                           <s_rctps_rep_thumbnail
                             ><img
-                              class="lazyload object-cover ml-3 bg-h-100 w-16 h-11"
+                              class="lazyload w-16 h-11 object-cover ml-3 bg-h-100"
                               data-src="[##_rctps_rep_thumbnail_##]"
                               data-sizes="auto"
                               alt=""
@@ -1750,15 +1730,13 @@
               </s_sidebar_element>
             </s_sidebar>
             <div class="sidebar-element">
-              <div class="text-h-400" id="copyright">
-                <div class="flex justify-between">
-                  <!--이 부분은 스킨 소개페이지 및 제작자의 깃허브 링크로 이동됩니다.
-hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍니다.--><small
-                    ><a href="https://pronist.tistory.com/5">hELLO</a> ·
-                    Designed By
-                    <a href="https://github.com/pronist">정상우</a>.</small
-                  ><small>v4.2.2</small>
-                </div>
+              <div class="text-h-400 text-xs" id="copyright">
+                <!--이 부분은 스킨 소개페이지 및 제작자의 깃허브 링크로 이동됩니다.
+hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍니다.--><a
+                  href="https://pronist.tistory.com/5"
+                  >hELLO</a
+                >
+                · Designed By <a href="https://github.com/pronist">정상우</a>.
               </div>
             </div>
           </div>
@@ -1788,7 +1766,7 @@ hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍
           x-transition:leave-start="opacity-100"
           x-transition:leave-end="opacity-0"
         >
-          <div class="w-9 h-9">
+          <div>
             <img
               class="lazyload rounded-full w-9 h-9 cursor-pointer <s_if_var_sidebar>xl:invisible</s_if_var_sidebar>"
               @click="sidebar = ! sidebar"
@@ -1799,27 +1777,21 @@ hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍
               height="36"
             />
           </div>
-          <div class="max-w-[calc(80vw-152px)] h-5">
+          <div>
             <div
-              class="m-0 text-overflow-hidden text-sm font-bold text-h-800 dark:text-h-200"
+              class="m-0 text-sm font-bold h-5 text-overflow-hidden max-w-[calc(80vw-152px)] text-h-800 dark:text-h-200"
             >
               [##_page_title_##]
             </div>
           </div>
-          <div class="w-9 h-9">
+          <div>
             <button
-              class="subscription flex justify-center items-center w-9 h-9 outline-0 rounded-full bg-h-200 text-h-500 hover:bg-h-300 dark:text-h-200 dark:bg-h-700 dark:hover:bg-h-600 btn_menu_toolbar btn_subscription #subscribe"
-              x-data="{ subscribed: T.config.SUBSCRIPTION.isConnected }"
-              x-show='T.config.ROLE !== "owner" && /^(.*tistory\.com)$/.test(location.hostname)'
+              class="subscription flex justify-center items-center w-10 h-10 outline-0 rounded-full bg-h-200 text-h-500 hover:bg-h-300 dark:text-h-200 dark:bg-h-700 dark:hover:bg-h-600 btn_menu_toolbar btn_subscription #subscribe"
               :data-blog-id="T.config.BLOG.id"
               :data-url="TistoryBlog.tistoryUrl"
-              @click="subscribed = ! subscribed"
             >
               <span class="text-hidden">구독하기</span
-              ><i
-                class="fa-star text-sm"
-                :class='subscribed ? "fa-solid" : "fa-regular"'
-              ></i>
+              ><i class="fa-solid fa-star font-bold text-sm"></i>
             </button>
           </div>
         </div>
