@@ -17,21 +17,25 @@ public class Main {
 
         day = new int[H][N][M];
 
-        ArrayList<int[]> ripen = new ArrayList<>();
+        // i, j, k, time
+        Queue<int[]> ripen = new LinkedList<>();
 
-        // 그래프 구성
         for(int k=0; k<H; k++) {
             for(int i=0; i<N; i++) {
                 st = new StringTokenizer(br.readLine());
+
                 for(int j=0; j<M; j++) {
                     int tmp = Integer.parseInt(st.nextToken());
                     if(tmp == 1){
-                        ripen.add(new int[]{k, i, j});
+                        // 익은 토마토면 따로 위치 빼두고 day에 0일 표기
+                        ripen.add(new int[]{k, i, j, 0});
                         day[k][i][j] = 0;
                     } else if (tmp == 0) {
+                        // 안익은 토마토면 따로 카운트하고 day에 무한일 표기
                         unRipenCnt++;
                         day[k][i][j] = Integer.MAX_VALUE;
                     } else {
+                        // 빈칸이면 day에 불가능(-1) 표기
                         day[k][i][j] = -1;
                     }
                 }
@@ -64,25 +68,14 @@ public class Main {
         System.out.println(max);
     }
 
-
-    private static void bfs(ArrayList<int[]> ripped){
-        for(int[] rip: ripped) {
-            bfs(rip[0], rip[1], rip[2]);
-        }
-    }
-
-    // 위 아래 왼 오 앞 뒤
+    // h위 h아래 r상 r하 c왼 c오
     static int[] dr = {0, 0, 0, 0, 1, -1};
     static int[] dc = {0, 0, -1, 1, 0, 0};
     static int[] dh = {1, -1, 0, 0, 0, 0};
-    private static void bfs(int k, int i, int j) {
-        // i, j, k, time
-        Queue<int[]> queue = new LinkedList<>();
-        queue.add(new int[]{k, i, j, 0});
 
-        int[] cur = {};
+    private static void bfs(Queue<int[]> queue) {
         while(!queue.isEmpty()) {
-            cur = queue.poll();
+            int[] cur = queue.poll();
 
             for(int d=0; d<6; d++) {
                 int nh = cur[0] + dh[d];
@@ -90,9 +83,9 @@ public class Main {
                 int nc = cur[2] + dc[d];
                 int nd = cur[3] + 1;
 
-                // 범위 내 && 토마토 칸이 맞는지
+                // 범위 내 && 빈칸이 아닌지
                 if(!canMove(nh, nr, nc)) continue;
-                // day에 더 빨리 갈 방법이 이미 있는지
+                // 해당 칸의 토마토가 더 빨리 익는 경우가 이미 있는지
                 if(day[nh][nr][nc] <= nd) continue;
 
                 if(day[nh][nr][nc] == Integer.MAX_VALUE)    --unRipenCnt;
