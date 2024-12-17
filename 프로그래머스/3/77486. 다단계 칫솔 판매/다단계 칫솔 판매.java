@@ -16,19 +16,15 @@ class Solution {
             int money = amount[i] * 100;
             int charge;
             
-            // System.out.printf("%s가 %d원 벌었음 =>\n", seller[i], money);
             Node me = map.get(seller[i]);
             
             do {
                 // 부모한테 줄 거 떼고
                 charge = (int) (money * 0.1);
                 // 나머지 내가 먹음
-                // System.out.printf("\t%s: %d원 가짐, 나머지 %s 줌\n", me.name, money-charge, me.parent);
                 me.money += (money-charge);
-                
                 // 내가 루트면 종료
                 if(me.parent.equals("-")) break;
-                
                 // 나 -> 부모 갱신
                 me = map.get(me.parent);
                 // 수익금 갱신
