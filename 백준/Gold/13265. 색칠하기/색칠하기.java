@@ -43,20 +43,20 @@ public class Main {
             for(int i=1; i<N+1 && !impossible; i++) {
                 if(visited[i]) continue;
 
+                visited[i] = true;
                 nodes[i] = 0;
                 queue.add(new int[]{i, nodes[i]});
 
                 while (!queue.isEmpty() && !impossible) {
                     int[] cur = queue.poll();
-                    visited[cur[0]] = true;
                     // 나랑 연결돼 있는 애들
                     for (int next : graph.get(cur[0])) {
-                        if (visited[next]) continue;
-                        // 나랑 연결돼 있는 애들 중에 나랑 같은 색이 있음
-                        if (nodes[next] == cur[1]) {
+                        if (visited[next]) {
+                            if (nodes[next] != cur[1]) continue;
                             impossible = true;
                             break;
                         }
+                        visited[next] = true;
                         if (nodes[next] == -1)
                             nodes[next] = (cur[1] + 1) % 2;
                         // 연결된 애들 큐에 넣음
